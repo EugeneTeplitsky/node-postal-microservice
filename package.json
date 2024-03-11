@@ -1,0 +1,42 @@
+{
+  "name": "node-postal-microservice",
+  "version": "0.0.1",
+  "author": "Eugene Teplitsky (@EugeneTeplitsky)",
+  "description": "Simple ExpressJS-based microservice around node-postal",
+  "license": "MIT",
+  "keywords": [
+    "libpostal",
+    "addresses",
+    "address parsing",
+    "i18n",
+    "geo",
+    "deduping",
+    "machine learning",
+    "natural language processing",
+    "nlp",
+    "microservice",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/openvenues/node-postal",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openvenues/node-postal.git"
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "serve": "DEBUG=node-postal-microservice:* npm run devstart"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "debug": "^4.3.4",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "express-async-handler": "^1.2.0",
+    "express-validator": "^7.0.1",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "node-postal": "^1.2.0"
+  },
+  "devDependencies": {}
+}
